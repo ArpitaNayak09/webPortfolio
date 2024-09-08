@@ -4,6 +4,9 @@
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     /* background: white; */
@@ -93,4 +96,352 @@ nav ul li a:hover::after{
 .about-col-2 p{
     font-size: 20px;
 
+}
+
+#aboutme p{
+    color: white;
+    font-weight: bolder;
+}
+
+/* Skills */
+
+#skills {
+    padding: 80px 0;
+    
+}
+
+#skills .sub-sec{
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.skill-row {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.progress {
+    background-color: #76c7c0;
+    height: 100%;
+    line-height: 30px;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+/* projects */
+
+#projects {
+    padding: 80px 0;
+}
+#projects .sub-sec{
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    flex-basis: 45%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.project-card img:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-card p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* education */
+
+#education {
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+}
+
+.education-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.education-card {
+    flex-basis: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.education-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Pencil design */
+/* .pencil {
+    position: absolute;
+    width: 80%;
+    height: 20px;
+    background: linear-gradient(90deg, #ffdb58 90%, #ffab00);
+    border-radius: 10px;
+    top: 50%;
+    left: 10%;
+    z-index: 1;
+}
+
+.pencil::before {
+    content: '';
+    position: absolute;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.pencil::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #e6be8a;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+} */
+
+/* #education .education-card .one{
+    background: url();
+} */
+
+
+
+/* hobbies */
+
+
+#hobbies {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for hobbies section */
+}
+
+.hobbies-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hobby-card {
+    flex-basis: 30%;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hobby-card p {
+    font-size: 16px;
+}
+
+.hobby-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* contact */
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+ color: #000000;
+ margin-right: 15px;
+ font-size: 25px;
+}
+
+.socialmedia {
+    margin-top: 30px;
+}
+
+
+.socialmedia a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: black;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+
+.socialmedia a{
+    color: #030303;
+    transform: translateY(-5px);
+}
+
+.content-right form{
+width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+    background: hsla(0, 0%, 43%, 0.044);
+    border-radius: 6px;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+}
+
+.contact-right button{
+    padding: 12px  20px;
+    background-color: #fffafa;
+    color: black;
+    font-weight: 600;
+    transition: transform 0.5s;
+
+}
+.contact-right button:hover{
+    transform: translateY(-5px);
+}
+.fa-light .fa-envelope{
+color: #000000;
+}
+.contact-right{
+    color: whitesmoke;
+}
+
+
+/*  */
+
+/* Ensure background is fixed */
+
+
+
+/* Fixed background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url("https://images6.alphacoders.com/125/thumb-1920-1252495.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Transparent Header */
+#header {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    position: relative; /* Required for layering */
+    background: rgba(0, 0, 0, 0); /* Transparent background */
+}
+
+/* Header Content Styling */
+.header-text {
+    color: #fff; /* Text color */
+    margin-top: 16%;
+    font-size: 30px;
+    text-align: center; /* Center align text */
+}
+
+/* Sections Styling */
+#about, #skills, #projects, #education, #hobbies, #contact {
+    background-color: rgba(255, 255, 255, 0); /* White background with opacity */
+    padding: 50px 0;
+    margin-top: -5px; /* Adjust as needed */
+}
+
+/* Navigation Styling */
+nav {
+    position: absolute; /* Positioning navigation */
+    top: 0;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for nav */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center align navigation items */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /*color: #fff;  Navigation link color */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff004f; /* Hover color */
+}
+
+/* Optional: Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
